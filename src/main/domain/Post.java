@@ -17,9 +17,6 @@ public class Post {
     private boolean commentCanOpen;
     private String copyright;
     private int likesCount;
-    private boolean userLikes;
-    private boolean canLike;
-    private boolean canPublish;
     private int repostsCount;
     private boolean userReposted;
     private int viewsCount;
@@ -163,30 +160,6 @@ public class Post {
         this.likesCount = likesCount;
     }
 
-    public boolean isUserLikes() {
-        return userLikes;
-    }
-
-    public void setUserLikes(boolean userLikes) {
-        this.userLikes = userLikes;
-    }
-
-    public boolean isCanLike() {
-        return canLike;
-    }
-
-    public void setCanLike(boolean canLike) {
-        this.canLike = canLike;
-    }
-
-    public boolean isCanPublish() {
-        return canPublish;
-    }
-
-    public void setCanPublish(boolean canPublish) {
-        this.canPublish = canPublish;
-    }
-
     public int getRepostsCount() {
         return repostsCount;
     }
@@ -296,5 +269,36 @@ public class Post {
     }
      public boolean isUserReposted() {
         return userReposted;
+    }
+}
+
+
+Public class Interaction {
+    private boolean userLikes;
+    private boolean canLike;
+    private boolean canPublish;
+    
+    public boolean isUserLikes() {
+        return userLikes;
+    }
+
+    public void setUserLikes(boolean userLikes) {
+        this.userLikes = userLikes;
+    }
+    
+    public boolean isCanLike() {
+        return canLike;
+    }
+
+    public void setCanLike(boolean canLike) {
+        this.canLike = canLike;
+    }
+    
+    public boolean isCanPublish() {
+        return canPublish;
+    }
+
+    public void setCanPublish(boolean canPublish) {
+        this.canPublish = canPublish;
     }
 }
