@@ -195,10 +195,6 @@ public class Post {
         this.repostsCount = repostsCount;
     }
 
-    public boolean isUserReposted() {
-        return userReposted;
-    }
-
     public void setUserReposted(boolean userReposted) {
         this.userReposted = userReposted;
     }
@@ -297,5 +293,8 @@ public class Post {
 
     public void setPostponedID(int postponedID) {
         this.postponedID = postponedID;
+    }
+     public boolean isUserReposted() {
+        return userReposted;
     }
 }
