@@ -10,15 +10,7 @@ public class Post {
     private int replyOwnerID;
     private int replyPostID;
     private boolean friendsOnly;
-    private String commentButton;
-    private int commentCount;
-    private boolean commentCanPost;
-    private boolean commentCanClose;
-    private boolean commentCanOpen;
     private String copyright;
-    private int likesCount;
-    private int repostsCount;
-    private boolean userReposted;
     private int viewsCount;
     private String postType;
     private String postSource;
@@ -31,6 +23,9 @@ public class Post {
     private boolean markedAsAd;
     private boolean favorite;
     private int postponedID;
+    private LikesInfo likesInfo;
+    private CommentsInfo commentsInfo;
+    private RepostsInfo repostsInfo;
 
     public int getId() {
         return id;
@@ -270,15 +265,7 @@ public class Post {
      public boolean isUserReposted() {
         return userReposted;
     }
-}
-
-
-Public class Interaction {
-    private boolean userLikes;
-    private boolean canLike;
-    private boolean canPublish;
-    
-    public boolean isUserLikes() {
+        public boolean isUserLikes() {
         return userLikes;
     }
 
